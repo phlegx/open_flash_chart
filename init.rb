@@ -7,3 +7,7 @@ ActionController::Base.send :include, OpenFlashChart
 ActiveRecord::Base.send :include, OpenFlashChart::View
 ActiveRecord::Base.send :include, OpenFlashChart::Controller
 ActiveRecord::Base.send :include, OpenFlashChart
+
+Redmine::Plugin.register :open_flash_chart do
+  hidden true
+end
